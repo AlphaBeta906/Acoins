@@ -10,15 +10,14 @@ while True:
     chance = randint(1, 99999990)
     if chance == 1:
         resiver = "You"
-        money_lost = randint(1, 10000)
-        money = money_lost + money
+        money_lost = randint(1, 1000)
     else:
         cu = randint(1, 2)
         if cu == 1:
             resiver = "Miner " + str(randint(1, 9999999))
         else:
             resiver = "User " + str(randint(1, 9999999))
-        money_lost = randint(1, 99)
+        money_lost = randint(1, 10000)
     if c == 1:
         co = randint(1, 2)
         if co == 1:
